@@ -10,7 +10,10 @@ function sendMessage(message, callback){
 }
 
 sendMessage({mode: "init"}, (textTracks) => {
-  if(typeof textTracks === "undefined") return
+  if(typeof textTracks === "undefined"){
+    if(chrome.runtime.lastError) return
+    else return
+  }
 
   const html = textTracks.map(textTrack => {
     const { mode, language, label } = textTrack

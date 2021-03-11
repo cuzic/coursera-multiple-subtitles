@@ -1,11 +1,17 @@
 {
   "name": "Coursera Multiple Subtitles",
   "manifest_version": 2,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "browser_action": {
     "default_title": "Coursera Multiple Subtitles",
     "default_popup": "popup.html"
   },
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 
   "content_scripts": [
     {

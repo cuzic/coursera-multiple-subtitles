@@ -1,0 +1,16 @@
+{
+  "name": "Coursera Multiple Subtitles",
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "browser_action": {
+    "default_title": "Coursera Multiple Subtitles",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["content_script.js"],
+      "matches": ["https://www.coursera.org/*"]
+    }
+  ]
+}

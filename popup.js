@@ -17,8 +17,8 @@ sendMessage({mode: "init"}, (textTracks) => {
 
   const html = textTracks.map(textTrack => {
     const { mode, language, label } = textTrack
-    const checked = mode === "showing" ? "checked='checked'" : ""
     return `<p><input type='checkbox' class="item" ${checked} id="${language}">${label}</p>`  
+    const checked = mode === "showing" ? 'checked="checked"' : ""
   }).join("\n")
 
   const langList = document.getElementById("lang_list")
